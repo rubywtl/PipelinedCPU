@@ -1,0 +1,50 @@
+module regfile(ReadData1, ReadData2, WriteData, ReadRegister1, ReadRegister2, WriteRegister, RegWrite, clk);
+ 
+	// initialize variables
+
+	// INPUT + OUTPUT variables
+
+	input logic [4:0] ReadRegister1, ReadRegister2, WriteRegister; 
+
+	input logic [63:0] WriteData;
+
+	output logic [63:0] ReadData1, ReadData2;
+
+	input logic RegWrite; // write enable
+	
+	logic [63:0] mux_in // this comes OUT of the registers and goes IN to the mux
+
+
+	// decoder - transform write
+
+
+	// 32 64-bit-registers
+
+	// 0~30th reg: read + write
+
+	// (31st reg: contains 0)
+
+	// instead of using a register, we can just hardcode it to 0)
+
+	// mux for reading data (create TWO 64 bit muxs)
+	// mux1
+	generate
+   genvar i;
+		for (i=0; i<64; i=i+1) begin : mux
+		  mux1 mux32_1(.out(ReadData1[i]), .in(mux_in[i]), .sel(ReadRegister1[4:0]));
+		end
+	endgenerate
+	
+	// mux2
+	generate
+   genvar i;
+		for (i=0; i<64; i=i+1) begin : mux
+		  mux2 mux32_1(.out(ReadData2[i]), .in(mux_in[i]), .sel(ReadRegister2[4:0]));
+		end
+	endgenerate
+ 
+	
+
+endmodule
+
+ 

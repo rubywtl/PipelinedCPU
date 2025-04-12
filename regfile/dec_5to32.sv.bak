@@ -1,0 +1,57 @@
+module dec_5to32(out, in);
+
+    output logic [31:0] out;
+
+    input  logic [4:0] in;
+ 
+    logic [3:0] enable4;        
+
+    logic [7:0] sub_out [3:0];  
+ 
+    
+
+    dec_2to4 d_enable(.out(enable4), .in(in[4:3]));
+ 
+    // generate 4 x dec_3to8
+
+    genvar i;
+
+    generate
+
+        for (i = 0; i < 4; i++) begin : generate_decoders
+
+            dec_3to8 d(.out(sub_out[i]), .in(in[2:0]));
+
+        end
+
+    endgenerate
+ 
+    // use AND gates to gate each sub_out by enable4[i]
+
+    generate
+
+        for (i = 0; i < 4; i++) begin : generate_outputs
+
+            and(out[i*8+0], enable4[i], sub_out[i][0]);
+
+            and(out[i*8+1], enable4[i], sub_out[i][1]);
+
+            and(out[i*8+2], enable4[i], sub_out[i][2]);
+
+            and(out[i*8+3], enable4[i], sub_out[i][3]);
+
+            and(out[i*8+4], enable4[i], sub_out[i][4]);
+
+            and(out[i*8+5], enable4[i], sub_out[i][5]);
+
+            and(out[i*8+6], enable4[i], sub_out[i][6]);
+
+            and(out[i*8+7], enable4[i], sub_out[i][7]);
+
+        end
+
+    endgenerate
+
+endmodule
+
+ 

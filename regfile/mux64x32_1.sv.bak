@@ -1,0 +1,8 @@
+`timescale 1ps/1ps
+
+module mux64x32_1(
+	output logic [63:0] out,
+	input logic [63:0] in [31:0], // 32 inputs with 64 bits each
+	input logic [4:0] sel
+);
+

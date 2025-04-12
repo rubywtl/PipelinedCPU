@@ -1,0 +1,15 @@
+module dec_2to4(out, in);
+    output logic [3:0] out;
+    input  logic [1:0] in;
+ 
+    logic [1:0] dec0_in, dec1_in;
+ 
+    dec_1to2 d0(.out(dec0_in), .in(in[0])); 
+    dec_1to2 d1(.out(dec1_in), .in(in[1]));
+ 
+ 
+    and (out[0], dec1_in[0], dec0_in[0]);
+    and (out[1], dec1_in[0], dec0_in[1]);
+    and (out[2], dec1_in[1], dec0_in[0]);
+    and (out[3], dec1_in[1], dec0_in[1]);
+endmodule

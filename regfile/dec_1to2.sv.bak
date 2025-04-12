@@ -1,0 +1,25 @@
+// 1 to 2 decoder
+ 
+module dec_1to2(out, in);
+	output  logic [1:0]   out;
+	input   logic         in;
+	logic notIn;
+	// out[1] = in;
+	// out[0] = ~in;
+ 
+	#50 assign out[1] = in;
+	#50 not(out[0], in);
+endmodule
+ 
+ 
+module dec_1to2_testbench();
+	logic [1:0]out;
+	logic in;
+	dec_1to2 dut(.*);
+	initial begin
+        in = 0; #50; // decoder output should be 01
+        in = 1; #50; // decoder output should be 10
+ 
+        $finish;
+    end
+endmodule

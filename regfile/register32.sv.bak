@@ -1,0 +1,24 @@
+`timescale 1ps/1ps
+
+module register32(
+	output logic [63:0] out [31:0],
+	input logic [31:0] in, // 32 inputs
+	input logic [63:0] WriteData,
+	input logic clk, reset
+);
+
+	generate
+   genvar i;
+		for (i=0; i<32; i=i+1) begin : registers
+			 register reg_u(.write_data(WriteData), .clk, .reset, .write_enable(in[i]), .read_data(out[i][63:0]));
+		end
+	endgenerate
+endmodule
+
+
+module register (
+    input  logic [63:0] write_data,  // data in
+    input  logic clk, reset,
+    input  logic write_enable,
+    output logic [63:0] read_data    // data out
+);
