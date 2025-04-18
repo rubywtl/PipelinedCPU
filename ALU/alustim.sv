@@ -45,7 +45,7 @@ module alustim();
    
         $display("%t testing PASS_B operations", $time);
         cntrl = ALU_PASS_B;
-        for (i=0; i<30; i++) begin
+        for (i=0; i<100; i++) begin
             A = $random(); B = $random();
             #(delay);
             assert(result == B && negative == B[63] && zero == (B == '0))
@@ -58,7 +58,7 @@ module alustim();
        
         $display("%t testing addition operations", $time);
 		cntrl = ALU_ADD;
-		for (i = 0; i < 30; i++) begin
+		for (i = 0; i < 100; i++) begin
 			A = $random(); B = $random();
 			#(delay);
 			ans = A + B;
@@ -68,13 +68,12 @@ module alustim();
 			check_negative(ans, negative);
 			check_zero(ans, zero);
 			check_overflow_add(A, B, ans, overflow);
-			check_carry_add(ans_longer, carry_out);
 		end
 
  
         $display("%t testing subtract operations", $time);
 		cntrl = ALU_SUBTRACT;
-		for (i = 0; i < 30; i++) begin
+		for (i = 0; i < 100; i++) begin
 			A = $random(); B = $random();
 			#(delay);
 			ans = A - B;
@@ -84,13 +83,12 @@ module alustim();
 			check_negative(ans, negative);
 			check_zero(ans, zero);
 			check_overflow_sub(A, B, ans, overflow);
-			check_carry_sub(ans_longer, carry_out);
 		end
 
  
         $display("%t testing bitwise_and operations", $time);
         cntrl = ALU_AND;
-        for (i=0; i<30; i++) begin
+        for (i=0; i<100; i++) begin
             A = $random(); B = $random();
             #(delay);
 			ans = A & B;
@@ -103,7 +101,7 @@ module alustim();
  
         $display("%t testing or operations", $time);
         cntrl = ALU_OR;
-        for (i=0; i<30; i++) begin
+        for (i=0; i<100; i++) begin
             A = $random(); B = $random();
             #(delay);
 			ans = A | B;
@@ -116,7 +114,7 @@ module alustim();
  
         $display("%t testing xor operations", $time);
         cntrl = ALU_XOR;
-        for (i=0; i<30; i++) begin
+        for (i=0; i<100; i++) begin
             A = $random(); B = $random();
             #(delay);
 			ans = A ^ B;
@@ -126,8 +124,47 @@ module alustim();
 					$time, A, B, result, negative, zero);
 			end
         end
-    end
 
+		// edge cases
+		$display("%t testing adds and overflow, carry-out", $time);
+		cntrl = ALU_ADD;
+		A = 64'hFFFFFFFFFFFFFFFF; B = 64'h0000000000000001;
+		#(delay);
+		assert(result == 64'h0000000000000000 && carry_out == 1 && overflow == 0 && negative == 0 && zero == 1);
+			
+		A = 64'h3FFFFFFFFFFFFFFF; B = 64'h0000000000000001;
+		#(delay);
+		assert(result == 64'h4000000000000000 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0);
+		A = 64'h7FFFFFFFFFFFFFFF; B = 64'h0000000000000001;
+		#(delay);
+		assert(result == 64'h8000000000000000 && carry_out == 0 && overflow == 1 && negative == 1 && zero == 0);
+	
+		A = 64'h7FFFFFFFFFFFFFFF; B = 64'hFFFFFFFFFFFFFFFF;
+		#(delay);
+		assert(result == 64'h7FFFFFFFFFFFFFFE && carry_out == 1 && overflow == 0 && negative == 0 && zero == 0);
+	
+		A = 64'h8000000000000000; B = 64'hFFFFFFFFFFFFFFFF;
+		#(delay);
+		assert(result == 64'h7FFFFFFFFFFFFFFF && carry_out == 1 && overflow == 1 && negative == 0 && zero == 0);
+
+		$display("%t testing subtracts and overflow, carry-out", $time);
+		cntrl = ALU_SUBTRACT;
+		A = 64'h3FFFFFFFFFFFFFFF; B = 64'hFFFFFFFFFFFFFFFF;
+		#(delay);
+		assert(result == 64'h4000000000000000 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0);
+		A = 64'h7FFFFFFFFFFFFFFF; B = 64'hFFFFFFFFFFFFFFFF;
+		#(delay);
+		assert(result == 64'h8000000000000000 && carry_out == 0 && overflow == 1 && negative == 1 && zero == 0);
+		A = 64'h8000000000000000; B = 64'h0000000000000001;
+		#(delay);
+		assert(result == 64'h7FFFFFFFFFFFFFFF && carry_out == 1 && overflow == 1 && negative == 0 && zero == 0);
+	
+		A = 64'hDEADBEEFDECAFBAD; B = 64'hDEADBEEFDECAFBAD;
+		#(delay);
+		assert(result == 64'h0000000000000000 && carry_out == 1 && overflow == 0 && negative == 0 && zero == 1);	
+	end
+
+	// declared tasks for reusability
 	task check_result(input [63:0] A, B, ans, result);
 		if (result != ans)
 			$error("X Result mismatch: A=%h B=%h → Expected result=%h, Got result=%h", A, B, ans, result);
@@ -160,15 +197,7 @@ module alustim();
 			$error("X Overflow (SUB) incorrect: A[63]=%b B[63]=%b ans[63]=%b Expected overflow=%b", A[63], B[63], ans[63], expected);
 	endtask
 
-	task check_carry_add(input [64:0] ans_longer, input carry_out);
-		if (carry_out != ans_longer[64])
-			$error("X Carry-out (ADD) incorrect: carry_out=%b Expected carry_out=%b", carry_out, ans_longer[64]);
-	endtask
-
-	task check_carry_sub(input [64:0] ans_longer, input carry_out);
-		if (carry_out != ~ans_longer[64])
-			$error("X Carry-out (SUB) incorrect: carry_out=%b Expected carry_out=%b", carry_out, ~ans_longer[64]);
-	endtask	
-
 endmodule
+
+
 

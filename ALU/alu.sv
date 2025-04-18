@@ -31,6 +31,6 @@ module alu(A, B, cntrl, result, negative, zero, overflow, carry_out);
     assign negative = result[63];
  
     // zero flag logic
-    zero_checker zcheck({1'b0,result[62:0]}, zero);
+    zero_checker zcheck(result[63:0], zero);
  
 endmodule

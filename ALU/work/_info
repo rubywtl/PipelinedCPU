@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/rubyw/Downloads/EE 371/lab0
 vadder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1744868841
+Z2 !s110 1744952340
 !i10b 1
 !s100 [JYeze>om=JBF@V3J9J_h2
 IhgZE[83PaSOb:4X?dMDY03
@@ -26,7 +26,7 @@ Z9 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z10 !s108 1744868841.000000
+Z10 !s108 1744952340.000000
 Z11 !s107 ./zero_checker.sv|./mux8_1.sv|./mux4_1.sv|./mux2_1.sv|./bitwise_alu.sv|./alustim.sv|./alu.sv|./adder.sv|
 Z12 !s90 -reportprogress|300|./adder.sv|./alu.sv|./alustim.sv|./bitwise_alu.sv|./mux2_1.sv|./mux4_1.sv|./mux8_1.sv|./zero_checker.sv|
 !i113 1
@@ -81,13 +81,13 @@ valu
 R1
 R2
 !i10b 1
-!s100 :0Y1Cn95?MG28lUcCISZF0
-IGEQ8[XZ:YmMW]k<RPOUI;2
+!s100 7EHE7KPQ4>zWQH]VB3AZ_0
+I`2iNRXg<D9H1LJJA?7@5d1
 R3
 !s105 alu_sv_unit
 S1
 R5
-w1744843636
+w1744952336
 8./alu.sv
 F./alu.sv
 L0 2
@@ -104,13 +104,13 @@ valustim
 R1
 R2
 !i10b 1
-!s100 zV_d>^d@?m9X`Cnz1H4kE0
-IbGPgklkSW@M[njjP=^e`?3
+!s100 z4C]g[F14ZbZ86TMXiU;_3
+IPgeUPbO71cQ>cD8ZP[YjF0
 R3
 !s105 alustim_sv_unit
 S1
 R5
-w1744868836
+w1744938247
 8./alustim.sv
 F./alustim.sv
 L0 20
