@@ -1,0 +1,21 @@
+module regfile(ReadData1, ReadData2, WriteData, 
+	ReadRegister1, ReadRegister2, WriteRegister, RegWrite, clk);
+
+	// initialize variables
+	// INPUT + OUTPUT variables
+	input logic [4:0] ReadRegister1, ReadRegister2, WriteRegister; 
+	input logic [63:0] WriteData;
+	output logic [63:0] ReadData1, ReadData2;
+	input logic RegWrite; // write enable
+	
+	
+	// decoder - transform write
+	
+	
+	// 32 64-bit-registers
+	// 0~30th reg: read + write
+	
+	// 31st reg: contains 0 
+	// instead of using a register, we can just hardcode it to 0
+	
+endmodule

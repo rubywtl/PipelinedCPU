@@ -1,0 +1,9 @@
+module dec_3to8(out, in);
+
+	output  logic [7:0]   out;
+	input   logic [2:0]   in;
+	
+	dec_2to4(in[0], out[1:0]);
+	dec_2to4(in[1], out[2:3]);
+	
+endmodule

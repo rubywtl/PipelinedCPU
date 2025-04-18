@@ -1,0 +1,13 @@
+
+// 1 to 2 decoder
+module dec_1to2();
+	output  logic [1:0]   out;
+	input   logic         in, en;
+  
+	logic notOut;
+
+	#50 assign out[1] = en && in;
+	#50 assign noOut = ~in;
+	#50 assign out[0] = en && out;
+	
+endmodule

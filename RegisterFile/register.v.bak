@@ -1,0 +1,70 @@
+module register (
+    input  wire [63:0] write_data,  // data in
+    input  wire clk, reset,
+    input  wire write_enable,
+    output wire [63:0] read_data    // data out
+);
+
+    genvar i;
+    generate
+        for (i = 0; i < 64; i = i + 1) begin : dff
+            wire not_en, left, right, result;
+
+            #50 not n1(not_en, write_enable);
+            #50 and a1(left, read_data[i], not_en);
+            #50 and a2(right, write_data[i], write_enable);
+            #50 or  o1(result, left, right);
+
+            D_FF dff_inst (
+                .clk(clk),
+                .reset(reset),
+                .d(result),
+                .q(read_data[i])
+            );
+        end
+    endgenerate
+
+endmodule
+
+
+module reg64_testbench();
+	wire [63:0] write_data;
+	wire [63:0] read_data;
+	wire CLOCK_50, write_enable, reset;
+	
+	register register(.*);
+	
+	parameter clock_period = 100;
+    initial begin
+        CLOCK_50 = 0;
+        forever #(clock_period / 2) CLOCK_50 = ~CLOCK_50;
+    end
+	 
+	 
+    // testing begins
+    initial begin
+			// initialization
+			read_data = 64'b0;
+			write_data = 64'b0;
+			reset = 0; @(posedge clk);
+			
+			// test 1: no write when write is not enabled
+			write_enable = 0; @(posedge clk);
+			write_data = 63'b1; @(posedge clk);
+			
+			// test 2: write when enabled
+		   write_enable = 1; @(posedge clk);
+			
+			// test 3: reset
+			write_enable = 0; @(posedge clk);
+			reset = 1; @(posedge clk);
+			reset  = 0; @(posedge clk);
+			
+			// test 4: check read data after write
+			write_enable = 1; @(posedge clk);
+			write_data = 64'b1;
+
+        $stop;
+    end
+
+endmodule

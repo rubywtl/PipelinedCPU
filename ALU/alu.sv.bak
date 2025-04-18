@@ -1,0 +1,3 @@
+module alu(A, B, cntrl, result, negative, zero, overflow, carry_out);
+
+endmodule

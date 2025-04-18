@@ -1,0 +1,32 @@
+`timescale 1ps/1ps
+ 
+module adder (
+    input  logic [63:0] A, B,
+    output logic [63:0] sum,
+	 output logic add_co, add_ov
+);
+ 
+	logic [64:0] c_in;
+	logic AxorB, CinANDab, AandB, ov;
+	// c_out = c_in*(A XOR B)  + AB = c_in[64] I THINK
+	assign c_in[0] = 0;
+ 
+	generate
+   genvar i;
+		for (i=0; i<64; i=i+1) begin : adder_func
+			 // for finding sum
+			 XOR #50 a_xor_b(A[i], B[i], AxorB);
+			 XOR #50 ab_xor_cin(AxorB, c_in[i], sum[i]);
+			 
+			 //c_in[i+1] = c_in*(A XOR B)  + AB
+			 AND #50 ab_and_cin(AxorB, c_in[i], CinANDab);
+			 AND #50 a_and_b(A[i], B[i], AandB);
+			 OR #50 cinandab_or_ab(AandB, CinANDab, c_in[i+1]);
+		end
+		
+		XOR #50 overflow(c_in[64], c_in[63], ov);
+		assign add_ov = ov;
+		assign add_co = c_in[64];
+	endgenerate
+	
+endmodule

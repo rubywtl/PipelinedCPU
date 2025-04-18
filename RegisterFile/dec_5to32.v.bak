@@ -1,0 +1,10 @@
+// the decoder selects which register receives the reg write control signal
+// as its enable input
+
+module dec_5to32(input logic write_enable, input logic[5:0] dec_in, output logic[30:0] dec_out);
+
+   for (i=0; i<32; i=i+1) begin :
+     assign dec_out[i] = (i == dec_in) && write_enable
+   end
+	
+endmodule

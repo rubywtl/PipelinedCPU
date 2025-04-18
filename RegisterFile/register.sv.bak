@@ -1,0 +1,11 @@
+module register();
+	input logic [63:0] write_data;
+	input logic clk;
+	input logic write_enable;
+
+endmodule
+
+
+module reg64_testbench();
+
+endmodule

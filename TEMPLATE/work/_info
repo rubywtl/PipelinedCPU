@@ -1,0 +1,200 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rubyw/Downloads/EE 371/lab0
+vcounter
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1737152727
+!i10b 1
+!s100 U?45j?TTmOf6noacGj1L?2
+I?17e3LL6?C0F5R_<?aGK`2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 counter_sv_unit
+S1
+R0
+Z5 w1737152362
+Z6 8./counter.sv
+Z7 F./counter.sv
+L0 8
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1737152727.000000
+Z10 !s107 ./counter.sv|
+Z11 !s90 -reportprogress|300|./counter.sv|
+!i113 1
+Z12 tCvgOpt 0
+vcounter_testbench
+R1
+R2
+!i10b 1
+!s100 M5NfDbNFE2XJB5^[ZjBN63
+I:Wj:zTa:8I4WMR;o3cBF^1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 33
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 _DU[:d9<O_5:5n5Y]^MhD1
+I_2g8f^M3Ogh@=l5Lmb:Yi2
+R3
+Z13 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z14 w1737152103
+Z15 8./DE1_SoC.sv
+Z16 F./DE1_SoC.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z17 !s107 ./DE1_SoC.sv|
+Z18 !s90 -reportprogress|300|./DE1_SoC.sv|
+!i113 1
+R12
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 Wk[Kk<;S3QDCRU7aDgM<<3
+If0^Hk>U8T[g3j:IaS98mO2
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 80
+R8
+r1
+!s85 0
+31
+R9
+R17
+R18
+!i113 1
+R12
+n@d@e1_@so@c_testbench
+vhexDisplayer
+R1
+R2
+!i10b 1
+!s100 [BbNhLkzKSPTF0K^@cgH31
+IVb:SfX;J7M8_`N6G3AHmz2
+R3
+Z19 !s105 hexDisplayer_sv_unit
+S1
+R0
+Z20 w1737152621
+Z21 8./hexDisplayer.sv
+Z22 F./hexDisplayer.sv
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+Z23 !s107 ./hexDisplayer.sv|
+Z24 !s90 -reportprogress|300|./hexDisplayer.sv|
+!i113 1
+R12
+nhex@displayer
+vhexDisplayer_testbench
+R1
+R2
+!i10b 1
+!s100 m8afSN7T^SUMRGSW^TUh]1
+I9P@eQk=A<=1fmK6C]Qb=a2
+R3
+R19
+S1
+R0
+R20
+R21
+R22
+L0 93
+R8
+r1
+!s85 0
+31
+R9
+R23
+R24
+!i113 1
+R12
+nhex@displayer_testbench
+vsensorFSM
+R1
+R2
+!i10b 1
+!s100 Z?e3]HdgzZOGJ^d:0O@MF0
+In7BQ^Oij2Z]kgfI9LnNBJ0
+R3
+Z25 !s105 sensorFSM_sv_unit
+S1
+R0
+Z26 w1737151797
+Z27 8./sensorFSM.sv
+Z28 F./sensorFSM.sv
+L0 7
+R8
+r1
+!s85 0
+31
+R9
+Z29 !s107 ./sensorFSM.sv|
+Z30 !s90 -reportprogress|300|./sensorFSM.sv|
+!i113 1
+R12
+nsensor@f@s@m
+vsensorFSM_testbench
+R1
+R2
+!i10b 1
+!s100 mDM^Ob_9I[CYi8;PSDh8R2
+I_zT@1j7`4afa6fgd8>Dl30
+R3
+R25
+S1
+R0
+R26
+R27
+R28
+L0 78
+R8
+r1
+!s85 0
+31
+R9
+R29
+R30
+!i113 1
+R12
+nsensor@f@s@m_testbench

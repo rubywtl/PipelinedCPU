@@ -1,0 +1,1623 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/rubyw/Downloads/EE\ 371/lab0 {C:/Users/rubyw/Downloads/EE 371/lab0/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:39 on Jan 17,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/rubyw/Downloads/EE 371/lab0" C:/Users/rubyw/Downloads/EE 371/lab0/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:35:39 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/rubyw/Downloads/EE\ 371/lab0 {C:/Users/rubyw/Downloads/EE 371/lab0/counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:39 on Jan 17,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/rubyw/Downloads/EE 371/lab0" C:/Users/rubyw/Downloads/EE 371/lab0/counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:35:39 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/rubyw/Downloads/EE\ 371/lab0 {C:/Users/rubyw/Downloads/EE 371/lab0/sensorFSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:39 on Jan 17,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/rubyw/Downloads/EE 371/lab0" C:/Users/rubyw/Downloads/EE 371/lab0/sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:35:39 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/rubyw/Downloads/EE\ 371/lab0 {C:/Users/rubyw/Downloads/EE 371/lab0/hexDisplayer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:39 on Jan 17,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/rubyw/Downloads/EE 371/lab0" C:/Users/rubyw/Downloads/EE 371/lab0/hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:35:39 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+pwd
+# C:/Users/rubyw/Downloads/EE 371/lab0/simulation/modelsim
+cd ..
+# reading C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini
+cd ..
+pwd
+# C:/Users/rubyw/Downloads/EE 371/lab0
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:55 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:35:55 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:55 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:35:55 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:55 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:35:56 on Jan 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:56 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:35:56 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:35:56 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.counter
+# Loading work.sensorFSM
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(96): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(194)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 194
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_50
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_testbench/HEX3
+add wave -position end  sim:/DE1_SoC_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_testbench/HEX5
+add wave -position end  sim:/DE1_SoC_testbench/KEY
+add wave -position end  sim:/DE1_SoC_testbench/SW
+add wave -position end  sim:/DE1_SoC_testbench/LEDR
+add wave -position end  sim:/DE1_SoC_testbench/V_GPIO
+add wave -position end  sim:/DE1_SoC_testbench/reset
+add wave -position end  sim:/DE1_SoC_testbench/sensorA
+add wave -position end  sim:/DE1_SoC_testbench/sensorB
+add wave -position end  sim:/DE1_SoC_testbench/LedL
+add wave -position end  sim:/DE1_SoC_testbench/LedR
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/rubyw/Downloads/EE 371/lab0/lab1_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:31 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:36:31 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:31 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:36:31 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:31 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:36:31 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:31 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:36:31 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:36:32 on Jan 17,2025, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:36:32 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.counter
+# Loading work.sensorFSM
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(96): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(194)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 194
+add wave -position 14  sim:/DE1_SoC_testbench/dut/sensors/enter
+add wave -position 15  sim:/DE1_SoC_testbench/dut/sensors/exit
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/rubyw/Downloads/EE 371/lab0/lab1_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:37:44 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:37:44 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:37:44 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:37:44 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:37:44 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:37:44 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:37:44 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:37:44 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:37:45 on Jan 17,2025, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:37:45 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.counter
+# Loading work.sensorFSM
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(96): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(194)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 194
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:34 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:39:34 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:34 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:39:34 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:34 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:39:34 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:34 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:39:34 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:39:34 on Jan 17,2025, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:39:34 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.counter
+# Loading work.sensorFSM
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(97): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(195)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 195
+add wave -position 14  sim:/DE1_SoC_testbench/dut/sensors/ps
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/rubyw/Downloads/EE 371/lab0/lab1_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:49 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:40:49 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:49 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:40:49 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:49 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:40:49 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:50 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:40:50 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:40:50 on Jan 17,2025, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:40:50 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.counter
+# Loading work.sensorFSM
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(97): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(195)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 195
+pwd
+# C:/Users/rubyw/Downloads/EE 371/lab0
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:36 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:47:37 on Jan 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:37 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:47:37 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:37 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:47:37 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:37 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:47:37 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:47:38 on Jan 17,2025, Elapsed time: 0:06:48
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:47:38 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.sensorFSM
+# Loading work.counter
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(97): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(194)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 194
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:51 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:54:51 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:51 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:54:51 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:51 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:54:51 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:54:51 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:54:51 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:54:52 on Jan 17,2025, Elapsed time: 0:07:14
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:54:52 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.sensorFSM
+# Loading work.counter
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(98): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(195)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 195
+do runlab.dol
+# Cannot open macro file: runlab.dol
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:55:41 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:55:41 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:55:41 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:55:42 on Jan 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:55:42 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:55:42 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:55:42 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:55:42 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:55:42 on Jan 17,2025, Elapsed time: 0:00:50
+# Errors: 1, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:55:42 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.sensorFSM
+# Loading work.counter
+# ** Warning: (vsim-3015) ./DE1_SoC.sv(98): [PCDPC] - Port size (13) does not match connection size (36) for port 'V_GPIO'. The port definition is at: ./DE1_SoC.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(196)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 196
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:59:59 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 12:59:59 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:59:59 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 12:59:59 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:59:59 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 12:59:59 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:59:59 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 12:59:59 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:59:59 on Jan 17,2025, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 12:59:59 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.sensorFSM
+# Loading work.counter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(196)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 196
+add wave -position 14  sim:/DE1_SoC_testbench/dut/cnt/value
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/rubyw/Downloads/EE 371/lab0/lab1_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:02:08 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 13:02:08 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:02:08 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 13:02:08 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:02:08 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 13:02:08 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:02:08 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 13:02:08 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:02:09 on Jan 17,2025, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 13:02:09 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.sensorFSM
+# Loading work.counter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(196)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 196
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:14:38 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 13:14:38 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:14:38 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# ** Error: (vlog-13069) ./counter.sv(24): near "end": syntax error, unexpected end.
+# End time: 13:14:38 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./counter.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:15:16 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 13:15:16 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:15:16 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 13:15:16 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:15:16 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# 
+# Top level modules:
+# 	sensorFSM
+# End time: 13:15:16 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:15:16 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# 
+# Top level modules:
+# 	hexDisplayer
+# End time: 13:15:16 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:15:17 on Jan 17,2025, Elapsed time: 0:13:08
+# Errors: 4, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 13:15:17 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.hexDisplayer
+# Loading work.sensorFSM
+# Loading work.counter
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(194)
+#    Time: 13850 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at ./DE1_SoC.sv line 194
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:30 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 13:46:30 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:30 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# ** Error: (vlog-13069) ./counter.sv(31): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting ';'.
+# End time: 13:46:30 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./counter.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:06 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:00:06 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:06 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# ** Error: ./counter.sv(62): (vlog-2730) Undefined variable: 'exit'.
+# ** Error: ./counter.sv(67): (vlog-2730) Undefined variable: 'enter'.
+# ** Error: ./counter.sv(72): (vlog-2730) Undefined variable: 'enter'.
+# End time: 14:00:06 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./counter.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:59 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:00:59 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:59 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# ** Error: ./counter.sv(67): (vlog-2730) Undefined variable: 'enter'.
+# End time: 14:00:59 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./counter.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:34 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:03:34 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:34 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:03:34 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:34 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# ** Error: (vlog-13069) ./sensorFSM.sv(88): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# End time: 14:03:34 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 9
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./sensorFSM.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:25 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:04:25 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:25 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:04:25 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:25 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# ** Error: ./sensorFSM.sv(103): (vlog-2730) Undefined variable: 'CLOCK_50'.
+# End time: 14:04:25 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 9
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./sensorFSM.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:08:54 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:08:54 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:08:54 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:08:54 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:08:54 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# ** Error: ./sensorFSM.sv(93): (vlog-2110) Illegal reference to net "CLOCK_50".
+# ** Error: ./sensorFSM.sv(94): (vlog-2110) Illegal reference to net "CLOCK_50".
+# End time: 14:08:54 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 9
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./sensorFSM.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:15 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:09:15 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:15 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:09:15 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:09:15 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# ** Error: ./sensorFSM.sv(99): (vlog-2730) Undefined variable: 'clk'.
+# End time: 14:09:15 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 9
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./sensorFSM.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:00 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:10:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:00 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:10:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:00 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:10:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:00 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:10:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:10:01 on Jan 17,2025, Elapsed time: 0:54:44
+# Errors: 31, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 14:10:01 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Warning: (vsim-3017) ./counter.sv(37): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench/dut File: ./counter.sv
+# ** Warning: (vsim-3722) ./counter.sv(37): [TFMPC] - Missing connection for port 'value'.
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/CLOCK_50'.
+# Executing ONERROR command at macro ./lab1_wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/HEX0'.
+# Executing ONERROR command at macro ./lab1_wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/HEX1'.
+# Executing ONERROR command at macro ./lab1_wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/HEX2'.
+# Executing ONERROR command at macro ./lab1_wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/HEX3'.
+# Executing ONERROR command at macro ./lab1_wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/HEX4'.
+# Executing ONERROR command at macro ./lab1_wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/HEX5'.
+# Executing ONERROR command at macro ./lab1_wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/KEY'.
+# Executing ONERROR command at macro ./lab1_wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/SW'.
+# Executing ONERROR command at macro ./lab1_wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/LEDR'.
+# Executing ONERROR command at macro ./lab1_wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/V_GPIO'.
+# Executing ONERROR command at macro ./lab1_wave.do line 13
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/reset'.
+# Executing ONERROR command at macro ./lab1_wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/sensorA'.
+# Executing ONERROR command at macro ./lab1_wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/sensorB'.
+# Executing ONERROR command at macro ./lab1_wave.do line 16
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/cnt/value'.
+# Executing ONERROR command at macro ./lab1_wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/sensors/ps'.
+# Executing ONERROR command at macro ./lab1_wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/sensors/enter'.
+# Executing ONERROR command at macro ./lab1_wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/dut/sensors/exit'.
+# Executing ONERROR command at macro ./lab1_wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/LedL'.
+# Executing ONERROR command at macro ./lab1_wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/DE1_SoC_testbench/LedR'.
+# Executing ONERROR command at macro ./lab1_wave.do line 22
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end  sim:/counter_testbench/clock_period
+add wave -position end  sim:/counter_testbench/inc
+add wave -position end  sim:/counter_testbench/dec
+add wave -position end  sim:/counter_testbench/clk
+add wave -position end  sim:/counter_testbench/reset
+add wave -position end  sim:/counter_testbench/cntmax
+add wave -position end  sim:/counter_testbench/value
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/rubyw/Downloads/EE 371/lab0/lab1_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:49 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:10:49 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:49 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:10:49 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:49 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:10:49 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:49 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:10:49 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:10:50 on Jan 17,2025, Elapsed time: 0:00:49
+# Errors: 60, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 14:10:50 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Warning: (vsim-3017) ./counter.sv(37): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench/dut File: ./counter.sv
+# ** Warning: (vsim-3722) ./counter.sv(37): [TFMPC] - Missing connection for port 'value'.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:13:47 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:13:47 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:13:47 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:13:47 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:13:47 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:13:47 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:13:47 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:13:47 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:13:48 on Jan 17,2025, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 14:13:48 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Warning: (vsim-3017) ./counter.sv(37): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench/dut File: ./counter.sv
+# ** Warning: (vsim-3722) ./counter.sv(37): [TFMPC] - Missing connection for port 'value'.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:00 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:18:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:00 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:18:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:00 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:18:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:00 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:18:00 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:18:01 on Jan 17,2025, Elapsed time: 0:04:13
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 14:18:01 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Warning: (vsim-3017) ./counter.sv(38): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench/dut File: ./counter.sv
+# ** Warning: (vsim-3722) ./counter.sv(38): [TFMPC] - Missing connection for port 'value'.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:58 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:18:58 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:18:58 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# ** Error: (vlog-13069) ./counter.sv(45): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# End time: 14:18:58 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./counter.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:19:26 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:19:26 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:19:26 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:19:26 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:19:27 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:19:27 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:19:27 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:19:27 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:19:27 on Jan 17,2025, Elapsed time: 0:01:26
+# Errors: 4, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work counter_testbench 
+# Start time: 14:19:27 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.counter_testbench
+# Loading work.counter
+# ** Warning: (vsim-3839) ./counter.sv(58): Variable '/counter_testbench/value', driven via a port connection, is multiply driven. See ./counter.sv(38).
+#    Time: 0 ps  Iteration: 0  Instance: /counter_testbench File: ./counter.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:50 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:21:50 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:50 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:21:50 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:50 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:21:50 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:50 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:21:50 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:21:50 on Jan 17,2025, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work hexDisplayer_testbench 
+# Start time: 14:21:50 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.hexDisplayer_testbench
+# Loading work.hexDisplayer
+# ** Warning: (vsim-3017) ./hexDisplayer.sv(105): [TFMPC] - Too few port connections. Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /hexDisplayer_testbench/dut File: ./hexDisplayer.sv
+# ** Warning: (vsim-3722) ./hexDisplayer.sv(105): [TFMPC] - Missing connection for port 'HEX0'.
+# ** Error: (vish-4014) No objects found matching '/counter_testbench/clock_period'.
+# Executing ONERROR command at macro ./lab1_wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/counter_testbench/inc'.
+# Executing ONERROR command at macro ./lab1_wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/counter_testbench/dec'.
+# Executing ONERROR command at macro ./lab1_wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/counter_testbench/clk'.
+# Executing ONERROR command at macro ./lab1_wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/counter_testbench/reset'.
+# Executing ONERROR command at macro ./lab1_wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/counter_testbench/cntmax'.
+# Executing ONERROR command at macro ./lab1_wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/counter_testbench/value'.
+# Executing ONERROR command at macro ./lab1_wave.do line 9
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end  sim:/hexDisplayer_testbench/reset
+add wave -position end  sim:/hexDisplayer_testbench/clk
+add wave -position end  sim:/hexDisplayer_testbench/cntmax
+add wave -position end  sim:/hexDisplayer_testbench/value
+add wave -position end  sim:/hexDisplayer_testbench/HEX5
+add wave -position end  sim:/hexDisplayer_testbench/HEX4
+add wave -position end  sim:/hexDisplayer_testbench/HEX3
+add wave -position end  sim:/hexDisplayer_testbench/HEX2
+add wave -position end  sim:/hexDisplayer_testbench/HEX1
+add wave -position end  sim:/hexDisplayer_testbench/HEX0
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/rubyw/Downloads/EE 371/lab0/lab1_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:22:32 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:22:32 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:22:32 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:22:32 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:22:32 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:22:32 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:22:32 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:22:32 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:22:33 on Jan 17,2025, Elapsed time: 0:00:43
+# Errors: 21, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work hexDisplayer_testbench 
+# Start time: 14:22:33 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.hexDisplayer_testbench
+# Loading work.hexDisplayer
+# ** Warning: (vsim-3017) ./hexDisplayer.sv(105): [TFMPC] - Too few port connections. Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /hexDisplayer_testbench/dut File: ./hexDisplayer.sv
+# ** Warning: (vsim-3722) ./hexDisplayer.sv(105): [TFMPC] - Missing connection for port 'HEX0'.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:23:46 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:23:46 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:23:46 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:23:46 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:23:46 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:23:46 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:23:46 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:23:46 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:23:47 on Jan 17,2025, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work hexDisplayer_testbench 
+# Start time: 14:23:47 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.hexDisplayer_testbench
+# Loading work.hexDisplayer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:09 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:25:09 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:09 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:25:09 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:09 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:25:09 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:09 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:25:09 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:25:10 on Jan 17,2025, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sensorFSM_testbench 
+# Start time: 14:25:10 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.sensorFSM_testbench
+# Loading work.sensorFSM
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/reset'.
+# Executing ONERROR command at macro ./lab1_wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/clk'.
+# Executing ONERROR command at macro ./lab1_wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/cntmax'.
+# Executing ONERROR command at macro ./lab1_wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/value'.
+# Executing ONERROR command at macro ./lab1_wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/HEX5'.
+# Executing ONERROR command at macro ./lab1_wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/HEX4'.
+# Executing ONERROR command at macro ./lab1_wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/HEX3'.
+# Executing ONERROR command at macro ./lab1_wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/HEX2'.
+# Executing ONERROR command at macro ./lab1_wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/HEX1'.
+# Executing ONERROR command at macro ./lab1_wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/hexDisplayer_testbench/HEX0'.
+# Executing ONERROR command at macro ./lab1_wave.do line 12
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./sensorFSM.sv(153)
+#    Time: 3850 ps  Iteration: 1  Instance: /sensorFSM_testbench
+# Break in Module sensorFSM_testbench at ./sensorFSM.sv line 153
+add wave -position end  sim:/sensorFSM_testbench/sensorA
+add wave -position end  sim:/sensorFSM_testbench/sensorB
+add wave -position end  sim:/sensorFSM_testbench/reset
+add wave -position end  sim:/sensorFSM_testbench/CLOCK_50
+add wave -position end  sim:/sensorFSM_testbench/enter
+add wave -position end  sim:/sensorFSM_testbench/exit
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/rubyw/Downloads/EE 371/lab0/lab1_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:27 on Jan 17,2025
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 14:25:27 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:27 on Jan 17,2025
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# -- Compiling module counter_testbench
+# 
+# Top level modules:
+# 	counter_testbench
+# End time: 14:25:27 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:27 on Jan 17,2025
+# vlog -reportprogress 300 ./sensorFSM.sv 
+# -- Compiling module sensorFSM
+# -- Compiling module sensorFSM_testbench
+# 
+# Top level modules:
+# 	sensorFSM_testbench
+# End time: 14:25:27 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:27 on Jan 17,2025
+# vlog -reportprogress 300 ./hexDisplayer.sv 
+# -- Compiling module hexDisplayer
+# -- Compiling module hexDisplayer_testbench
+# 
+# Top level modules:
+# 	hexDisplayer_testbench
+# End time: 14:25:27 on Jan 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:25:27 on Jan 17,2025, Elapsed time: 0:00:17
+# Errors: 30, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work sensorFSM_testbench 
+# Start time: 14:25:28 on Jan 17,2025
+# Loading sv_std.std
+# Loading work.sensorFSM_testbench
+# Loading work.sensorFSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./sensorFSM.sv(153)
+#    Time: 3850 ps  Iteration: 1  Instance: /sensorFSM_testbench
+# Break in Module sensorFSM_testbench at ./sensorFSM.sv line 153
+# End time: 12:26:43 on Jan 21,2025, Elapsed time: 94:01:15
+# Errors: 0, Warnings: 0

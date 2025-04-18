@@ -1,0 +1,3 @@
+module dec_5to32(input logic dec_in, output logic dec_out);
+
+endmodule

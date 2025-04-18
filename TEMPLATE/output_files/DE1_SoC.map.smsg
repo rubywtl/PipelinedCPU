@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(15): object "LEDR" differs only in case from object "LedR" in the same scope File: C:/Users/rubyw/Downloads/EE 371/lab0/DE1_SoC.sv Line: 15
+Info (10281): Verilog HDL Declaration information at DE1_SoC.sv(91): object "LEDR" differs only in case from object "LedR" in the same scope File: C:/Users/rubyw/Downloads/EE 371/lab0/DE1_SoC.sv Line: 91
